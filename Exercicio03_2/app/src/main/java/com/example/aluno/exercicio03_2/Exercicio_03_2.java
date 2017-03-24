@@ -35,20 +35,29 @@ public class Exercicio_03_2 extends AppCompatActivity {
         double num1 = Double.valueOf(numero01.getText().toString());
         double num2 = Double.valueOf(numero02.getText().toString());
         String mensagem = null;
+        String paraPassar = "0"; // guarda "9" ou "6"
+        String resultado = null; // guarda APROVADO ou REPROVADO
+        
         double media = (num1 + num2) / 2;
 
         if(chave01.isChecked()){
-
+            paraPassar = "9";
             if(media >= 9){
-                mensagem = "Sua média foi "+media+" . Para passar é 9. Você foi APROVADO.";
-                Toast.makeText(this, mensagem, Toast.LENGTH_SHORT).show();
-            }else mensagem = "Sua média foi "+media+" . Para passar é 9. Você foi REPROVADO.";
+                resultado = "APROVADO."
+            }else {
+                resultado = "REPROVADO."
+            }
         }
         else{
+            paraPassar = "6";
             if(media >= 6){
-                mensagem = "Sua média foi "+media+" . Para passar é 6. Você foi APROVADO.";
-                Toast.makeText(this, mensagem, Toast.LENGTH_SHORT).show();
-            }else mensagem = "Sua média foi "+media+" . Para passar é 6. Você foi REPROVADO.";
+                resultado = "APROVADO."
+            }else{
+                resultado = "REPROVADO."
+            }
         }
+            
+        mensagem = "Sua média foi "+media+" . Para passar é "+paraPassar+" . Você foi "+resultado;
+        Toast.makeText(this, mensagem, Toast.LENGTH_SHORT).show();
     }
 }
