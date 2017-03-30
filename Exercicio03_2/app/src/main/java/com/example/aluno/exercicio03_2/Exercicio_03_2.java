@@ -43,17 +43,17 @@ public class Exercicio_03_2 extends AppCompatActivity {
         if(chave01.isChecked()){
             paraPassar = "9";
             if(media >= 9){
-                resultado = "APROVADO."
+                resultado = "APROVADO.";
             }else {
-                resultado = "REPROVADO."
+                resultado = "REPROVADO.";
             }
         }
         else{
             paraPassar = "6";
             if(media >= 6){
-                resultado = "APROVADO."
+                resultado = "APROVADO.";
             }else{
-                resultado = "REPROVADO."
+                resultado = "REPROVADO.";
             }
         }
             
