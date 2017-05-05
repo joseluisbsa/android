@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_dados_persistente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aluno.projetodadospersistente.CadastroDadosPersistente">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Qual seu nome?"
+        android:id="@+id/editNome"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Qaunto voce tem guardado?"
+        android:layout_below="@id/editNome"
+        android:id="@+id/editValor"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editValor"
+        android:text="Salvar"
+        android:id="@+id/botaoSalvar"
+        android:layout_centerHorizontal="true"
+        android:onClick="salvarDados"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpar dados"
+        android:layout_below="@id/botaoSalvar"
+        android:onClick="limparDados"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
