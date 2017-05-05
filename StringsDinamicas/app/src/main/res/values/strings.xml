@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tela Inicial</string>
+    <string name="msg_loka">Seu nome é %1$s e sua idade é %2$d</string>
+</resources>
