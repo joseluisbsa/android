@@ -26,6 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
+    // usado para usar rest
     compile 'io.github.openfeign:feign-core:9.5.0'
     compile 'io.github.openfeign:feign-gson:9.5.0'
 }

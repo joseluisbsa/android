@@ -42,6 +42,4 @@ public class Postagem {
     public void setBody(String body) {
         this.body = body;
     }
-
-
 }

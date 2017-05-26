@@ -25,11 +25,19 @@
         android:id="@+id/conteudo"
         android:text="" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/codigo"
+        android:layout_below="@id/conteudo"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/conteudo"
+        android:layout_below="@id/codigo"
         android:id="@+id/botao"
-        android:text="Consultar"/>
+        android:text="Consultar"
+        android:onClick="consultar"/>
 </RelativeLayout>
